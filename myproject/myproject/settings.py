@@ -76,23 +76,23 @@ WSGI_APPLICATION = 'myproject.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
-
 # DATABASES = {
 #     'default': {
-#         'ENGINE': 'djongo',  # Set this to 'djongo' for MongoDB
-#         'NAME': 'Assignment',  # MongoDB database name
-#         'ENFORCE_SCHEMA': False,  # Optional: prevents schema validation errors
-#         'CLIENT': {
-#             'host': 'mongodb+srv://01fe21bcs162:K80hQEGdQkBKNhPu@assignment.qxifp.mongodb.net/?retryWrites=true&w=majority&appName=Assignment/Assignment',  # Your MongoDB URI
-#         }
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
 #     }
 # }
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'djongo',  # Set this to 'djongo' for MongoDB
+        'NAME': 'Assignment',  # MongoDB database name
+        'ENFORCE_SCHEMA': False,  # Optional: prevents schema validation errors
+        'CLIENT': {
+            'host': 'mongodb+srv://01fe21bcs162:K80hQEGdQkBKNhPu@assignment.qxifp.mongodb.net/?retryWrites=true&w=majority&appName=Assignment/Assignment',  # Your MongoDB URI
+        }
+    }
+}
 
 
 
